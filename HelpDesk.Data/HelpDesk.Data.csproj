@@ -47,15 +47,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\ORM\Context\HelpDeskContext.cs" />
+    <Compile Include="Models\ORM\Entity\BaseEntity.cs" />
+    <Compile Include="Models\ORM\Entity\Department.cs" />
+    <Compile Include="Models\ORM\Entity\Ticket.cs" />
+    <Compile Include="Models\ORM\Entity\TicketCategory.cs" />
+    <Compile Include="Models\ORM\Entity\TicketComment.cs" />
+    <Compile Include="Models\ORM\Entity\TicketForward.cs" />
+    <Compile Include="Models\ORM\Entity\TicketHistory.cs" />
+    <Compile Include="Models\ORM\Entity\User.cs" />
+    <Compile Include="Models\ORM\Entity\UserTicket.cs" />
+    <Compile Include="Models\ORM\Entity\UserTicketMessage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\ORM\Entity\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
