@@ -13,7 +13,7 @@ namespace HelpDesk.Data.Models.ORM.Context
     {
       public HelpDeskContext()
       {
-          Database.Connection.ConnectionString = "";
+          Database.Connection.ConnectionString = "Server=.;Database=HelpDeskdb;UID=sa;PWD=123";
       }
 
       protected override void OnModelCreating(DbModelBuilder modelBuilder)
