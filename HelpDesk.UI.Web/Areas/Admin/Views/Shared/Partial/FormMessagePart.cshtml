@@ -1,0 +1,20 @@
+﻿@using HelpDesk.UI.Web.Areas.Admin.Models.Types.Enums;
+@using HelpDesk.UI.Web.Areas.Admin.Models.Types.Messages;
+
+@if (ViewBag.IslemDurum == EnumIslemDurum.IslemBasarili)
+{
+    <div class="alert alert-success alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+        <h4><i class="icon fa fa-check"></i> Başarılı!</h4>
+        @FormsMessages.success
+    </div>
+}
+else if (ViewBag.IslemDurum == EnumIslemDurum.ValidationHata)
+{
+    <div class="alert alert-danger alert - dismissible">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+        <h4><i class="icon fa fa-check"></i> Hata!</h4>
+        @FormsMessages.validationerror
+    </div>
+
+}

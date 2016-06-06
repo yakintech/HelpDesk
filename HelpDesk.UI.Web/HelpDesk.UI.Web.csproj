@@ -959,13 +959,17 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\AdminDepartmentController.cs" />
     <Compile Include="Areas\Admin\Controllers\AdminHomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\AdminLoginController.cs" />
     <Compile Include="Areas\Admin\Controllers\BaseController.cs" />
     <Compile Include="Areas\Admin\Models\Attributes\UserLoginControl.cs" />
     <Compile Include="Areas\Admin\Models\Services\LoginServices.cs" />
     <Compile Include="Areas\Admin\Models\Types\Enums\EnumIslemDurum.cs" />
+    <Compile Include="Areas\Admin\Models\Types\Messages\FormsMessages.cs" />
     <Compile Include="Areas\Admin\Models\Types\Messages\UserMessages.cs" />
+    <Compile Include="Areas\Admin\Models\VM\BaseVM.cs" />
+    <Compile Include="Areas\Admin\Models\VM\DepartmentVM.cs" />
     <Compile Include="Areas\Admin\Models\VM\LoginVM.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -1099,6 +1103,9 @@
     <Content Include="Areas\Admin\Views\Shared\AdminLayout.cshtml" />
     <Content Include="Areas\Admin\Views\AdminHome\Index.cshtml" />
     <Content Include="Areas\Admin\Views\AdminLogin\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminDepartment\AddDepartment.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\Partial\FormMessagePart.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminDepartment\Partial\DepartmentForm.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
