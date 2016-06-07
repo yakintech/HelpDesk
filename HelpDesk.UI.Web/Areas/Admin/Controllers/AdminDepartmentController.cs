@@ -20,7 +20,7 @@ namespace HelpDesk.UI.Web.Areas.Admin.Controllers
                 ID = x.ID
             }).ToList();
 
-            return View();
+            return View(model);
         }
 
         public ActionResult AddDepartment()

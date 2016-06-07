@@ -44,5 +44,25 @@ namespace HelpDesk.UI.Web.Areas.Admin.Controllers
                 return View(); 
             }
         }
+
+        public ActionResult LogOff()
+        {
+            FormsAuthentication.SignOut();
+            return RedirectToAction("Index", "AdminLogin");
+        }
+
+        public ActionResult ForgotPassword()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult ForgotPassword(LoginVM model)
+        {
+            return View();
+        }
+
+
+
     }
 }

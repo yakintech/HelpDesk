@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "UpdateDepartment";
+    Layout = "~/Areas/Admin/Views/Shared/AdminLayout.cshtml";
+}
+
+@model DepartmentVM
+<section class="content-header">
+    <h1>
+        Departman İşlemleri
+    </h1>
+</section>
+
+<section class="content">
+
+    @Html.Partial("/Areas/Admin/Views/Shared/Partial/FormMessagePart.cshtml")
+
+    <div class="col-md-12">
+        <!-- general form elements -->
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3 class="box-title">Departman Düzenleme</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            @Html.Partial("Partial/DepartmentForm")
+
+        </div>
+
+    </div>
+</section>

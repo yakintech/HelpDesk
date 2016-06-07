@@ -16,6 +16,9 @@ namespace HelpDesk.UI.Web.Areas.Admin.Controllers
         public GenericRepository<Department> rpdepartment;
         public BaseController()
         {
+
+           // ViewBag.UserEMail = HttpContext.User.Identity.Name;
+
             rpuser = new GenericRepository<User>();
             rpdepartment = new GenericRepository<Department>();
         }

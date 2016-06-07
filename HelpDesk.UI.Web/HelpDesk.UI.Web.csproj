@@ -1106,6 +1106,13 @@
     <Content Include="Areas\Admin\Views\AdminDepartment\AddDepartment.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\Partial\FormMessagePart.cshtml" />
     <Content Include="Areas\Admin\Views\AdminDepartment\Partial\DepartmentForm.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminDepartment\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminDepartment\UpdateDepartment.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\Partial\HeaderPart.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\Partial\LeftMenu.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\Partial\Footer.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\Partial\RightBar.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminLogin\ForgotPassword.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
